@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: 852ba2adcf1018b48aece2f65e6b54d2
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Banquet_Lamb_Ribs_wktqbjzs_2K
+    second: {fileID: 2100000, guid: 12de937b672436f4ca7ad3fd4d95c62a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Banquet_Metal_Plate_xixlcj1mw_2K
+    second: {fileID: 2100000, guid: fbbadd25978cf9749b8979367813acd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Banquet_Wood_Plate_xixsfgd_2K
+    second: {fileID: 2100000, guid: 1f49740c2856e1a44a9897a6d17ad2dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Banquet_Wooden_Cup_xfphbfb_2K
+    second: {fileID: 2100000, guid: eea68193a0bd07e48b8e97ef9a412a17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Banquet_Wooden_Cup_xfphbgf_2K
+    second: {fileID: 2100000, guid: f0e4fa24d3481f849aeb9445bee93cd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Blacksmith_Anvil_uckmegpfa_2K
+    second: {fileID: 2100000, guid: 00b134c0d55308441bb9383a726b5607, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Blacksmith_Anvil_uckoci3fa_2K
+    second: {fileID: 2100000, guid: 3fc0cdcd8fe91e44390f067ef19e6654, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Book_wldobc3_2K
+    second: {fileID: 2100000, guid: 2e75b5f6cf5ae654981bdd64abb82ebd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Burnt_Firewood_udthchoiw_2K
+    second: {fileID: 2100000, guid: 800d624fbeb0b1f4e93060a7f23c916f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Burnt_Firewood_udthdasiw_2K
+    second: {fileID: 2100000, guid: 9d2cacf7974f6c040ba06f49179e4aed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Castle_Wall_sctv3_4K
+    second: {fileID: 2100000, guid: 0668fdfadf662984b96aa3801749ea27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Decorative_Hardcover_Book_vdkvag3_2K
+    second: {fileID: 2100000, guid: d3f9c3f5ac4dd4f428b5222553454a38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Glass_Traditional_Lantern_xccpecydw_4K
+    second: {fileID: 2100000, guid: d3f9c3f5ac4dd4f428b5222553454a38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Green_Book_vdkvbb2_2K
+    second: {fileID: 2100000, guid: 5481becec34fbb540912942ad809dad5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Grilled_Turkey_Leg_wd5lcfcaa_2K
+    second: {fileID: 2100000, guid: f25ba67b4fa30814295b1d824211d8b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Leather_Wooden_Chest_vigiaeoga_2K
+    second: {fileID: 2100000, guid: 68d3093ac54e3a24a98690d4edc76531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Modular_Iron_Fence_xdiiajjdw_2K
+    second: {fileID: 2100000, guid: e42fbd7032a8031408ebbbf62772d5d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Mossy_Roof_Tiles_ul0kdffbw_2K
+    second: {fileID: 2100000, guid: 208f149d9bb20884297789bd143bcbcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Old_Book_wldodjd_2K
+    second: {fileID: 2100000, guid: b9a9cef2dab3c7e4393a694672601d3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Old_Cushion_vishcehdb_2K
+    second: {fileID: 2100000, guid: 52ae2edade67ff545a418fb173512eba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Old_Cushion_vizmci3va_2K
+    second: {fileID: 2100000, guid: d5c6f3691db781646a33e77cb7b88726, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Old_Metal_Pot_ufljdc2fa_2K
+    second: {fileID: 2100000, guid: ad20d4d01f7e4a54c89845f8c2b6b6ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Old_Wooden_Bench_uchpfjefa_2K
+    second: {fileID: 2100000, guid: 0629c55ea2ea2ce41b7fca7a5464ec29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Old_Wooden_Bucket_ubupeirfa_2K
+    second: {fileID: 2100000, guid: 1f18eed4eda498c4fab418fb497701df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Patterned_Brick_Floor_uidoadeew_4K
+    second: {fileID: 2100000, guid: a86e0d45a597533409e74b53f8410074, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Rusty_Teapot_wdktcew_2K
+    second: {fileID: 2100000, guid: bcb302043041079498fe74e48c277694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Stained_Wooden_Ceiling_vjogaco_4K
+    second: {fileID: 2100000, guid: 3f71f92d95e74e947bd4e1e1aae6ad34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Stone_Pillar_selvF_4K
+    second: {fileID: 2100000, guid: 08242a4eece77a54482c7ae29b9c0ec5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Stone_Wall_uk3lfbyfw_4K
+    second: {fileID: 2100000, guid: 2e20cf8ee97024b4c8fc503b56da964e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Traditional_Lantern_xccpecydw_4K
+    second: {fileID: 2100000, guid: e0b654e1e59e84d4c9434d7598f767d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_War_Hammer_Axe_uh1pbcufa_2K
+    second: {fileID: 2100000, guid: 1620e55d04337c54d9385763bd274932, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Wooden_Barrel_udlmcdhqx_2K
+    second: {fileID: 2100000, guid: 5ac5960d7aff6e1468ad15e44cf54f21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Wooden_Caddy_ukwteiiaw_2K
+    second: {fileID: 2100000, guid: b3625d25417f5ea4bb6a8ade75e2eea6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Wooden_Stool_ucspai0fa_2K
+    second: {fileID: 2100000, guid: ddc804580ce1f3a45acd9811aab18d93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Wooden_Wheel_ugljehkga_2K
+    second: {fileID: 2100000, guid: ee00dced809329545b9da6afa868cb21, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.03125
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
