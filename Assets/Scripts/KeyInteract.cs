@@ -1,19 +1,43 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KeyInteract : MonoBehaviour
 {
-    public List<GameObject> keys = new List<GameObject>();
-    public List<GameObject> keyUI = new List<GameObject>();
+    [SerializeField] private Dictionary<GameObject, GameObject> keys = new Dictionary<GameObject, GameObject>();
+    public LayerMask keyLayer;
+    public Text keyText;
+
+    public string keyLookedAt = "";
+    public float maxRayDistance;
+    public float offsetDistance;
 
     void Update()
     {
-        // Use Raycast to see if the player is looking at the key or not
-        // if the player is then uipdate the ui to show the key
-        // the then the player can grab the key
-        // Raycast will go on abother scipt
-        // the same raycast will be used in the doors, or the other thinds
-        // maybe add interactable lightes after post-porcessing is done.
+        FireRaycast();
+        
+    }
+
+    void FireRaycast(){
+        Vector3 direction = transform.forward;
+        Vector3 orgin = transform.position + direction.normalized * offsetDistance;
+
+        RaycastHit hit;
+
+        Debug.DrawRay(orgin, direction * maxRayDistance, Color.red);
+
+        if (Physics.Raycast(orgin, direction, out hit, maxRayDistance, keyLayer))
+        {
+            keyLookedAt = hit.collider.name;
+            keyText.text = keyLookedAt + " (E)";
+
+        }
+        else
+        {
+            keyLookedAt = "";
+            keyText.text = "";
+        }
+
     }
 
 }
