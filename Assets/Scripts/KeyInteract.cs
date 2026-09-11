@@ -5,21 +5,36 @@ using UnityEngine.InputSystem;
 
 public class KeyInteract : MonoBehaviour
 {
-    [SerializeField] private Dictionary<GameObject, GameObject> keys = new Dictionary<GameObject, GameObject>();
     [SerializeField] private InputActionReference pickUpKeyAction;
+    [SerializeField] private InputActionReference dropKeyAction;
     public LayerMask keyLayer;
     public Text keyText;
 
-    public string keyLookedAt = null;
+    public GameObject keyLookedAt = null;
+    public GameObject keyPicked = null;
+    //[SerializeField] private Quaternion keyRotation= new Quaternion.Euler(250, -185, 60);
     public float maxRayDistance;
     public float offsetDistance;
+
+    [SerializeField] List<Vector3> newKeyProperties = new List<Vector3>(){
+        new Vector3(0.35f, -0.15f, 0.5f),
+        new Vector3(250f, -185f, 60f),
+        new Vector3(3f, 3f, 3f)
+    };
 
     void Update()
     {
         FireRaycast();
 
         if (keyLookedAt is not null && pickUpKeyAction.action.WasPressedThisFrame()){
-            PickUpKey();
+            PickUpKey(keyLookedAt.GetComponent<Transform>(), keyLookedAt.GetComponent<MeshCollider>(),
+                    keyLookedAt.GetComponent<Rigidbody>());
+            keyPicked = keyLookedAt;
+        }
+        if (keyPicked is not null && dropKeyAction.action.WasPressedThisFrame()){
+            DropKey(keyPicked.GetComponent<Transform>(), keyPicked.GetComponent<MeshCollider>(),
+                    keyPicked.GetComponent<Rigidbody>());
+            keyPicked = null;
         }
     }
 
@@ -33,8 +48,8 @@ public class KeyInteract : MonoBehaviour
 
         if (Physics.Raycast(orgin, direction, out hit, maxRayDistance, keyLayer))
         {
-            keyLookedAt = hit.collider.name;
-            keyText.text = keyLookedAt + " (E)";
+            keyLookedAt = hit.collider.gameObject;
+            keyText.text = keyLookedAt.GetComponent<MeshCollider>().name + " (E)";
 
         }
         else
@@ -44,8 +59,21 @@ public class KeyInteract : MonoBehaviour
         }
     }
 
-    private void PickUpKey(){
-        Debug.Log("Picked up key: " + keyLookedAt);
+    private void PickUpKey(Transform keyPos, MeshCollider keyColl, Rigidbody keyRb){
+        Debug.Log("Picked up key: " + keyColl.name);
+        keyColl.enabled = false;
+        keyPos.SetParent(transform);
+        keyRb.useGravity = false;
+        keyPos.localPosition = newKeyProperties[0];
+        keyPos.localEulerAngles = newKeyProperties[1];
+        keyPos.localScale = newKeyProperties[2];
+    }
+
+    private void DropKey(Transform keyPos, MeshCollider keyColl, Rigidbody keyRb){
+        keyRb.useGravity = true;
+        keyPos.SetParent(null);
+        keyColl.enabled = true;
+        Debug.Log("Dropped key: " + keyColl.name);
     }
 
 }

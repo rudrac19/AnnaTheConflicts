@@ -45620,13 +45620,19 @@ MonoBehaviour:
   - key: {fileID: 410146129}
     value: {fileID: 1215688890}
   pickUpKeyAction: {fileID: 9105313236433352293, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
+  dropKeyAction: {fileID: 4900514675932174884, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
   keyLayer:
     serializedVersion: 2
     m_Bits: 128
   keyText: {fileID: 1215688892}
-  keyLookedAt: 
+  keyLookedAt: {fileID: 0}
+  keyPicked: {fileID: 0}
   maxRayDistance: 3
   offsetDistance: 0.5
+  newKeyProperties:
+  - {x: 0.35, y: -0.15, z: 0.5}
+  - {x: 250, y: -185, z: 60}
+  - {x: 3, y: 3, z: 3}
 --- !u!1 &760947087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8124471439649985477, guid: 852ba2adcf1018b48aece2f65e6b54d2, type: 3}
