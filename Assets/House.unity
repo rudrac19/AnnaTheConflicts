@@ -45616,9 +45616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5c3cf7b6ae3eb4eb2fe619a736b925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyInteract
-  keys:
-  - key: {fileID: 410146129}
-    value: {fileID: 1215688890}
   pickUpKeyAction: {fileID: 9105313236433352293, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
   dropKeyAction: {fileID: 4900514675932174884, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
   keyLayer:
