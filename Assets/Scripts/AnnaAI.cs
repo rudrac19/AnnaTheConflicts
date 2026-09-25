@@ -6,14 +6,13 @@ using UnityEngine.AI;
 public class AnnaAI : MonoBehaviour
 {
     public NavMeshAgent agent;
+    public Animator animator;
 
     public float roamRadius = 5f;
     public float waitTime = 3f;
-
-    public Transform model;
-    public Vector3 rotOffset = new Vector3(0f, 180f, 0f);
-
     public float waitTimer;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +23,10 @@ public class AnnaAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        bool isWalking = agent.velocity.sqrMagnitude > 0.01f;
+        animator.SetBool("isWalking", isWalking);
+
         if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance){
             waitTimer += Time.deltaTime;
 
@@ -34,13 +37,6 @@ public class AnnaAI : MonoBehaviour
             }
         }
 
-        if (agent.velocity.sqrMagnitude > 0.01f)
-        {
-            Vector3 direction = agent.velocity.normalized;
-            direction.y = 0;
-
-            transform.rotation = Quaternion.LookRotation(direction);
-        }
     }
 
     void ChooseNewDestination(){
