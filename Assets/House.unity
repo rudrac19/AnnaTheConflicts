@@ -105008,7 +105008,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.87
-  m_Speed: 2
+  m_Speed: 1.75
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 128.7
@@ -105034,9 +105034,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnnaAI
   agent: {fileID: 2109626790}
   animator: {fileID: 2109626792}
+  playerPos: {fileID: 1724653397}
   roamRadius: 10
   waitTime: 5
   waitTimer: 0
+  maxRange: 10
 --- !u!95 &2109626792
 Animator:
   serializedVersion: 7
