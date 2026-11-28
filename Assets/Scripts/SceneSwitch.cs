@@ -7,7 +7,7 @@ public class SceneSwitch : MonoBehaviour
         "" -- used for both menu and house
         intro
         gameover
-        game won
+        gamewon
     */
     public static string state = "";
 
