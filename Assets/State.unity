@@ -363,11 +363,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8609c8986421c5543a9d9bb047ecb070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StateManager
-  intro: 1
+  introAnimation: {fileID: 1947621292}
   introDuration: 60
-  over: 0
+  overAnimation: {fileID: 889288563}
   gameOverDuration: 10
-  won: 0
+  wonAnimation: {fileID: 0}
   gameWonDuration: 10
 --- !u!1 &738680259
 GameObject:

@@ -3,16 +3,16 @@ using UnityEngine;
 public class StateManager : MonoBehaviour
 {
     [Header("Intro Properties")]
-    [SerializeField] bool intro = true;
+    [SerializeField] GameObject introAnimation;
     public float introDuration = 60f;
 
     [Header("Game Over Properties")]
-    [SerializeField] bool over = false;
+    [SerializeField] GameObject overAnimation;
     public float gameOverDuration = 10f;
 
     [Header("Game Won Properties")]
-    [SerializeField] bool won = false;
-    public float gameWonDuration = 10f;
+    [SerializeField] GameObject wonAnimation;
+    public float gameWonDuration = 30f;
 
     private float timeLeft = 60f;
     private string nextScene = "MainMenu";
@@ -28,14 +28,17 @@ public class StateManager : MonoBehaviour
         
         if (state.Equals("gameover")){
             // run game over
+            overAnimation.SetActive(true);
             timeLeft = gameOverDuration;
             nextScene = "MainMenu";
-        } else if (state.Equals("gamewon")){
+        } else if (state.Equals("gamewon") && wonAnimation != null){
             // run game won
+            wonAnimation.SetActive(true);
             timeLeft = gameWonDuration;
             nextScene = "MainMenu";
         } else {
             // run intro
+            introAnimation.SetActive(true);
             timeLeft = introDuration;
             nextScene = "House";
 
